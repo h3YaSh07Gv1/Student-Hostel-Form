@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hostal Form</title>
+    <link rel="shortcut icon" href="images.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <u><h1>Student Hostel Form</h1></u>
+    <div id="maindiv">
+        <br>
+        <form action="/path.php" method="post" class="container">
+            <div class="labeldivs">
+                <div>
+                    <label for="name">Name of the Student:</label>
+                    <input type="text" id="name" name="studendname" placeholder="Name of the Student">
+                </div>
+                    <div>
+                    <label for="fatname">Father's Name:</label>
+                    <input type="text" id="fatname" name="fathername" placeholder="Father's Name">
+                    <!-- <br><br> -->
+                </div>
+                    <div>
+                    <label for="num">Adm Fee Receipt No. :</label>
+                    <input type="number" id="num" name="feenumber" placeholder="Fee Receipt No">
+                    <!-- <br><br> -->
+                </div>
+                    <div>
+                    <label for="phnum">Phone Number:</label>
+                    <input type="number" id="phnum" name="phnumber" placeholder="Ph Num" required> 
+                    <!-- <br><br> -->
+                </div>
+                    <div>
+                    <label for="mail">Email ID:</label>
+                    <input type="email" id="mail" name="mail" placeholder="IDnumber@rguktn.ac.in" required>
+                    <!-- <br><br> -->
+                </div>
+                    <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <!-- <br><br> -->
+                </div>  
+            </div>
+            <div>
+                <p class="A">Gender:</p>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+                <br><br>
+            </div>
+            <div>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+            </div>
+            <div>
+                <p class="A">Hobbies:</p>
+                <input type="checkbox" id="singing" name="singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" id="dancing" name="dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" id="playing" name="playing">
+                <label for="playing">Playing</label>
+                <br><br>
+            </div>
+            <div class="edu">
+                <label for="eduQualification">Eduacation Qualification</label>
+                <select name="qualification" id="eduQualification" required>
+                    <option value="so" disabled selected>Select Option</option>
+                    <option value="tenth">10th(Tenth)</option>
+                    <option value="inter">Indermediate(+11,+12)</option>
+                    <option value="btech">BTech(Engineering)</option>
+                    <option value="mtech">MTech(Masters)</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <h4 style="display: inline;">Upload your image here:</h4>
+                <label for="fileInput" id="filelabel">Select a file</label>
+                <input type="file" id="fileInput" name="image">
+                <br><br>
+            </div>
+            <div>
+                <label for="address">Address:</label><br>
+                <textarea name="add" id="address" cols="38" rows="5" placeholder="Complete Address"></textarea>
+                <br><br>
+            </div>
+            <div id="buttons">
+                <button type="submit" id="subbut" name="submitbutton">Submit</button>
+                <button type="reset" id="resetbut" name="resetbutton">Clear</button>
+                <button type="button" id="prtbut" name="printbutton">Print</button>
+            </div>
+        </form>
+        <br>
+    </div>
+</body>
+</html>
